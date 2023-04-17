@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Mansoor</title>
+    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav id="navBar" class="navBar">
+        <div onclick="openMenu()"class="menuIcon"><i class="bi-list"></i></div>
+        <div class="navlist">
+            <a href="#aboutme">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">My Skills</a>
+            <a href="#projects">My Projects</a>
+            <a href="#contactus">Contact Me</a>  
+        </div>
+        <img class="navProfile"src="./Images/Virat.jpg" alt="NavProfile">
+    </nav>
+    <main>
+        <div class="profileBody">
+            <div class="profileInfo">
+                <p class="text1">Hello, It's me</p>
+                <p class="text2">Shaik Mansoor</p>
+                <p class="text3">Full Stack Developer</p>
+                <div class="skillsList">
+                    <p>HTML</p>
+                    <p>CSS</p>
+
+                </div>
+            </div>
+            <div>
+                <img class="profileImage"src="./Images/Virat.jpg" alt="NavProfile"> 
+
+            </div>
+
+        </div>
+        <div id="aboutme" class="aboutmeBody">
+            <p class="title"> About Me</p>
+            <div class="aboutmeInfo"> 
+                <p>Hii I am Mansoor. I am a fullstack developer</p>
+                <ul>
+                    <li>concrete understanding and usage of programming standards</li>
+                    <li>Good analytical, problem solving and trouble shooting skills</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+</body>
+<script>
+    function openMenu() {
+        document.getElementById('navBar')?.classList.toggle('active')
+    }
+</script>
+</html>

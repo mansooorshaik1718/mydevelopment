@@ -1,0 +1,150 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: aqua;
+}
+.navBar{
+    background-color:blueviolet ;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    padding: 2px 25px;
+    column-gap: 20px;
+}
+.navbutton{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+.navbutton a{
+    color:beige;
+    text-decoration: none;
+    width: 60px;
+    height: 21px;
+    padding: 2px 15px;
+    border: 2px solid beige;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.navbutton :hover {
+    color: beige;
+
+}
+
+.navList{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.navList a{
+    text-decoration: none;
+    color: #fff;
+    width: 80px;
+    padding: 2px 15px;
+    border: 2px #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+.navList a:hover{
+    background-color: #ffb217;
+    color:#402474;
+}
+.navProfile{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+}
+
+.menuIcon{
+    display: none;
+}
+.profileBody{
+    height: 90vh;
+    background-color: darkgray;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.profileImage{
+    width: 350px;
+    height: 500px;
+}
+.text1{
+    font-size: 30px;
+    color:#fff;
+}
+.text1::first-letter{
+    font-size: 50;
+    color:initial;
+}
+.text2{
+    font-size: 50px;
+    color: #ffb217;
+}
+.text3{
+    font-size: 50px;
+    color: #ffffff;
+    font-style: italic;
+}
+.skillsList{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 15px;
+}
+.skillsList p{
+    padding: 3px 15px;
+    text-align: center;
+    width: 100px;
+    background-image: linear-gradient(to right, #ffb217,#f93e10);
+    border-radius: 25px;
+
+}
+.aboutmeBody{
+    width: 70%;
+    margin: 15px auto;
+}
+.title{
+    font-size: 25px;
+    color: #402474;text-decoration: underline 3px #ffb217;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aboutmeInfo{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+@media screen and (max_width:700px)  {
+
+    .navBar.active{
+        height: 200px;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+    .navBar.active .navList{
+        display: grid;
+        row-gap: 15px;
+    }
+
+    .navProfile.active
+    .navBar .navList{
+        display: none;
+    }
+    .menuIcon{
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+    .menuIcon i{
+        color: #fff;
+        font-size: 32px;
+    }
+    
+}
